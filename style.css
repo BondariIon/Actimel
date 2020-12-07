@@ -1,0 +1,112 @@
+*, *::before, *::after {
+box-sizing: border-box;
+    font-family:Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 120vh;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+
+.calculator-grid > button {
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    border: 5px solid white;
+    outline: none;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.calculator-grid > button:hover {
+    background-color: darkslategrey;
+}
+
+
+.calculator-grid > button.sterge{
+    background-color: orangered;
+}
+
+.calculator-grid > button.adunare{
+    background-color: orange;
+}
+
+.calculator-grid > button.scadere{
+    background-color: blueviolet;
+}
+
+.calculator-grid > button.inmultire{
+    background-color: cadetblue;
+}
+
+.calculator-grid > button.impartire{
+    background-color: green;
+}
+
+
+.iesire {
+    grid-column: 1 / -1;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.iesire .operatia-anterioara {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.iesire .operatia-curenta {
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
